@@ -6,14 +6,14 @@
 title: Hexo
 subtitle:
 description:
-author: John Doe
-language:
-timezone:
+author: Calamus
+language: Chinese
+timezone: UTc
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://calamus0427.github.io/hexo
-root: /
+url: https://calamus0427.github.io/hexo/
+root: /hexo
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -77,4 +77,14 @@ theme: cyanstyle
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/calamus0427/hexo.git
+  branch: gh-pages
+
+server:
+  compress: true # 开启压缩
+
+nofollow:
+    enable: true
+    exclude:
+        - https://calamus0427.github.io
